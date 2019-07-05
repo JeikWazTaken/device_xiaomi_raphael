@@ -55,3 +55,7 @@
 /system/lib/modules/rmnet_perf.ko             u:object_r:vendor_file:s0
 /system/lib/modules/rmnet_shs.ko              u:object_r:vendor_file:s0
 /system/lib/modules/tspp.ko                   u:object_r:vendor_file:s0
+/system/lib/modules/wlan\.ko    u:object_r:vendor_file:s0
+
+# Media
+/system/etc/media_codecs.xml    u:object_r:vendor_configs_file:s0
