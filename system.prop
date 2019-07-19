@@ -245,7 +245,7 @@ persist.vendor.radio.atfwd.start=true
 #ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 #Enable ZRAM
-ro.vendor.qti.config.zram=false
+ro.vendor.qti.config.zram=true
 
 #IOP properties
 vendor.iop.enable_uxe=0
