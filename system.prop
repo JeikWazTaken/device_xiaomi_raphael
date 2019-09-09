@@ -12,6 +12,9 @@ ro.vendor.display.sensortype=2
 # prop for amoled panel
 ro.display.type=oled
 
+# Stock LCD Density
+ro.sf.lcd_density=440
+
 # displayfeature use poll to monitor backlight brightness
 ro.xiaomi.bl.poll=true
 
