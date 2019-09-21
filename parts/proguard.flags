@@ -4,6 +4,8 @@
 
 -keep class ** extends android.support.v14.preference.PreferenceFragment
 
+-dontwarn **lineageos**
+
 -keep class org.lineageos.settings.dirac.* {
   *;
 }
