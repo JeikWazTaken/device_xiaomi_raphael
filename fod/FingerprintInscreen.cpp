@@ -22,7 +22,6 @@
 #include <fstream>
 #include <cmath>
 
-#define FINGERPRINT_ERROR_VENDOR 8
 
 #define COMMAND_NIT 10
 #define PARAM_NIT_FOD 3
@@ -113,7 +112,7 @@ Return<bool> FingerprintInscreen::handleAcquired(int32_t acquiredInfo, int32_t v
 
 Return<bool> FingerprintInscreen::handleError(int32_t error, int32_t vendorCode) {
     LOG(ERROR) << "error: " << error << ", vendorCode: " << vendorCode << "\n";
-    return error == FINGERPRINT_ERROR_VENDOR && vendorCode == 6;
+    return false;
 }
 
 Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
@@ -123,10 +122,10 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t brightness) {
     float alpha;
 
-    if (brightness > 62.0) {
-        alpha = 1.0 - pow((((brightness / 255.0) * 430.0) / 600.0), 0.455);
+    if (brightness > 60) {
+        alpha = 1.0 - pow(brightness / 255.0 * 430.0 / 600.0, 0.455);
     } else {
-        alpha = 1.0 - pow((brightness / 210.0), 0.455);
+        alpha = 1.0 - pow(brightness / 200.0, 0.455);
     }
 
     return 255 * alpha;
