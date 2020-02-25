@@ -106,6 +106,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
 
+# Music Player
+PRODUCT_PACKAGES += \
+    Music
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
