@@ -108,7 +108,7 @@ PRODUCT_COPY_FILES += \
 
 # Music Player
 PRODUCT_PACKAGES += \
-    Music
+    Musica
 
 # Net
 PRODUCT_PACKAGES += \

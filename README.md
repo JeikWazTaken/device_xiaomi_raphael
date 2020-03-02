@@ -1,6 +1,6 @@
 Copyright (C) 2019 - The Android Open Source Project
 
-ExtendedUI device tree for Redmi K20 Pro/ Xiaomi Mi9T Pro
+AOSAP device tree for Redmi K20 Pro/ Xiaomi Mi9T Pro
 ==============
 
 Suggested and functional local manifest
@@ -8,7 +8,7 @@ Suggested and functional local manifest
 ```xml
   <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="device/xiaomi/raphael" name="TheMarionette/device_xiaomi_raphael" remote="github" revision="ten" />
+  <project path="device/xiaomi/raphael" name="TheMarionette/device_xiaomi_raphael" remote="github" revision="aosap" />
   <project path="kernel/xiaomi/raphael" name="UtsavBalar1231/kernel_xiaomi_raphael" remote="github" revision="q-drm-changes" />
   <project path="vendor/xiaomi" name="Evolution-X-Devices/proprietary_vendor_xiaomi_new" remote="github" revision="ten" />
   <project path="vendor/MiuiCamera" name="PixelExperience-Devices/vendor_MiuiCamera" remote="github" revision="ten-anx-raphael" />
